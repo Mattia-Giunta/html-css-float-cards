@@ -2,20 +2,103 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html{
     font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
 }
 
 
 header{
-    height: 200px;
+    height: 150px;
 }
 
 /* title */
 h1{
-    height: 200px;
+    height: 150px;
     text-align: center;
-    line-height: 200px;
+    line-height: 150px;
     color: rgba(229, 49, 112, 1);
     font-size: 50px;
 }
+
+
+main{
+    height: 600px;
+}
+
+/* main article */
+p{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+figure{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cards{
+    width: calc(100% / 3 - 20px);
+    box-shadow: 2px 2px 10px 5px grey;
+    height: 100px;
+    margin-top: 40px;
+    background-color: rgba(15, 14, 23, 1);
+    color:white;
+    float: left;
+}
+
+.card-img{
+    float: left;
+    height: 100%;
+
+}
+
+.text-card{
+    height: 100%;
+    line-height: 10x;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both ;
+}
+
+
+.text-card,span,a{
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+/* name cards */
+.text-card span:first-child{
+    font-size: 25px;
+    tfont-weight: bold;
+}
+
+/* color email */
+.text-card a:last-child{
+    color: rgba(65, 168, 220, 1);
+}
+
+/* card margin */
+figure .cards:first-child{
+    margin-right: 30px;
+}
+
+figure .cards:nth-child(4){
+    margin-right: 30px;
+}
+
+figure .cards:nth-child(2){
+    margin-right: 30px;
+}
+
+figure .cards:nth-child(5){
+    margin-right: 30px;
+}
+
+/* esercizio finito */
